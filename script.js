@@ -114,7 +114,7 @@ inputSize();
 
 const inputButton = () => {
   const inputBox = document.createElement('button');
-  inputBox.innerHTML = 'VQV';
+  inputBox.innerHTML = 'Aplicar';
   inputBox.id = 'generate-board';
   secD.appendChild(inputBox);
 };
@@ -158,15 +158,7 @@ vqvButton.addEventListener('click', () => {
   const text = inputBox.value;
   const parseText = parseInt(text);
   let textMath = 0;
-  if (parseText <= '5') {
-    textMath = '25';
-  } else if (parseText >= '50') {
-    textMath = '2500';
-  } if (text === '') {
-    return alert('Board inválido!');
-  } if (parseText > '5' && parseText < '50') {
-    textMath = text * text;
-  }
+  textMath = text * text;
   clearAll();
   addBoxes(textMath);
   const newBoxes = document.getElementsByClassName('pixel');
@@ -203,8 +195,8 @@ const clearAll = () => {
     pixel.style.backgroundColor = 'white';
     pixel.classList.remove('selected');
   });
-   localStorage.removeItem('pixelBoard');
-   localStorage.removeItem('boardSize');
+  localStorage.removeItem('pixelBoard');
+  localStorage.removeItem('boardSize');
 };
 
 const clearButton = document.querySelector('#clear-board');
