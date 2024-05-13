@@ -6,6 +6,6 @@ O primeiro projeto que fiz! Uma representação simples, minimalista e divertida
 - Ferramentas básicas de desenho, incluindo pincel, borracha e seletor de cores
 - Exportação de imagens para compartilhamento
 
-[Experimente aqui](https://vciolac.github.io/project-pixel-art/](https://proj-pixel-art.vercel.app/))
+[Experimente aqui](https://proj-pixel-art.vercel.app/)
 
 Sinta-se à vontade para explorar cada projeto individualmente e entre em contato comigo se tiver alguma dúvida ou feedback!
